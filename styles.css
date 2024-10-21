@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff; /* Dark background for the body */
+    color: #a9a5a5c4; /* Light text color for contrast */
+}
+
+header {
+    background: #a09e9e; /* Dark gray for header */
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #020202; /* Bright cyan for links */
+    padding: 8px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav ul li a:hover {
+    background: #feffff; /* Bright cyan background on hover */
+    color: #282c34; /* Dark text color on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around; /* Space buttons evenly */
+    margin-bottom: 20px; /* Space below categories */
+}
+
+.categories button {
+    
+    color: #282c34; /* Dark text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth transition */
+}
+
+.categories button:hover {
+    background-color: #21a1f1; /* Darker cyan on hover */
+}    
+
+.items {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); /* Three columns */
+    gap: 20px; /* Space between items */
+    padding: 20px; /* Padding around the items */
+}
+
+.item-box {
+    border: 1px solid #444; /* Dark border */
+    border-radius: 5px;
+    background-color: #d3d3d3; /* Slightly lighter dark background for item boxes */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    text-align: center; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 15px; /* Inner padding */
+}
+
+.item-box img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    margin-bottom: 7px; /* Space below image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.item-box:hover {
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Deeper shadow on hover */
+}
+
+.item-box h3 {
+    margin: 10px 0;
+    color: #ffffff; /* White text for headings */
+}
+
+.item-box p {
+    color: #ffffff; /* Medium gray for descriptions */
+}
+
+footer {
+    background: #282c34; /* Dark gray background for footer */
+    color: #f0f0f0;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #444; /* Dark top border */
+}
+
+@media (max-width: 768px) {
+    .items {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .items {
+        grid-template-columns: 1fr; /* One column */
+    }
+}
+
+.hero {
+    background: url("https://png.pngtree.com/thumb_back/fw800/background/20240403/pngtree-nature-hd-8k-wallpaper-stock-photographic-image-image_15700648.jpg") no-repeat center center/cover; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 60px 20px; 
+    border-radius: 0 0 10px 10px; 
+}
+h2{
+    font-family:italic;
+
+
+}
+h2 {
+    background: url("https://img.freepik.com/premium-photo/8k-gaming-wallpaper-background_1020200-12437.jpg") no-repeat center center/cover; 
+    color: #080808; 
+    text-align: center;
+    padding: 60px 20px; 
+    border-radius: 0 0 10px 10px; 
+}
+h3{
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvXs78ptVQitDzJTmG4AGsuBCsc_yXKb2g30H9D8pq6WBJYguJ6OrrfJOW9rorjTehReCY-XZTY4S5S9b0dE21C4ezAN0K0EJnjkEoZbUz2UeUTYcyCRz8i49acoqyPrNxhin1-4sNCVQ/s1600/background-wallpaper-8k-landscape.png") no-repeat center center/cover; 
+    color: #080808; 
+    text-align: center;
+    padding: 60px 20px; 
+    border-radius: 0 0 10px 10px; 
+}
